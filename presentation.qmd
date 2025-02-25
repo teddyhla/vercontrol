@@ -1,26 +1,32 @@
 ---
 title: "guideline-version3-finalcomments49corrected.docx.lol"
 subtite: "Version Control for NHS"
+date: "2025-02-25"
+smaller: true
 format: 
   revealjs:
-    theme: serif
+    theme: [default,styles.scss]
 author:
   - name: "Teddy Tun Win HLA"
+    degrees:
+      - MBBS
+      - MRCP
+       - FFICM
     id: twh
     orcid: 0000-0001-9769-1618
     email: tunwin.hla@nhs.net
     affiliation: 
-      - name: Roslin Institute, University of Edinburgh
+      - name: GSTT 
         city: Edinburgh, Scotland
-        url: www.ed.ac.uk
+        url: 
   - name: "Edward Palmer"
     id: ep
     orcid: 0000-0002-8024-4616
     email: 
     affiliation: 
-      - name: R(D)SVS, University of Edinburgh
-        city: Edinburgh, Scotland
-        url: www.ed.ac.uk
+      - name: Whittington
+        city: London
+        url:
 footer: "Your social media handles - anything you want on each slide"
 bibliography: references.bib
 ---
