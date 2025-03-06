@@ -1,34 +1,224 @@
 ---
 title: "guideline-version3-finalcomments49corrected.docx.lol"
 subtite: "Version Control for NHS"
-date: "2025-02-25"
+date: "2025-03-07"
 smaller: true
 format: 
   revealjs:
-    theme: [default,styles.scss]
+    theme: [default, styles.scss]
+categories:
+  - "intensive care medicine"
+  - "version control"
+  - "reproducibility"
+  - "productivity"
+  - "collaboration"
+description: "Talk for the LIIT Conference"
 author:
   - name: "Teddy Tun Win HLA"
     degrees:
       - MBBS
       - MRCP
-       - FFICM
+      - FFICM
     id: twh
     orcid: 0000-0001-9769-1618
     email: tunwin.hla@nhs.net
     affiliation: 
       - name: GSTT 
-        city: Edinburgh, Scotland
+        city: London
         url: 
-  - name: "Edward Palmer"
+  - name: "Ed Palmer"
     id: ep
     orcid: 0000-0002-8024-4616
-    email: 
+    email: edward.palmer@nhs.net 
     affiliation: 
       - name: Whittington
         city: London
         url:
 footer: "Your social media handles - anything you want on each slide"
-bibliography: references.bib
+bibliography: reference.bib
+execute:
+  echo: false
+editor_options: 
+  chunk_output_type: console
 ---
 
-# Helloe!
+# The Problem
+
+::: notes
+General outline:
+1. Introduce the problem. Make it familiar and relatable.
+2. Demonstrate a solution by using: Markdown, git and github (or similar)
+3. Tackle obvious criticisms:
+  - We already have version control/track changes in word. Yes, but you haven't solved the emailing files issue
+  - So use google docs. This isn't a realistic solution and many trusts will not accept working closely with google as a company.
+4. Show the benefits beyond simple "track changes".
+  - Multi-institute collaborations
+  - Enhanced productivity
+  - Re-visiting old branches/toughts
+  - Total audit trail of peer review
+5. Practical steps (How to get started? Where to go?)
+  - Learn the tools: Markdown (already know some of this from whatsapp etc.), Git (this is a little code orientated, but there is software to help), Github.
+  - Read the Turing Way
+  - Speak to your IT department. Run a pilot
+6. Contribute back
+  - If you get this working write a chapter for healthcare collaboration in the turing way.
+:::
+
+---
+
+- Guidelines, policies etc. typically word documents (proprietary) emailed around.
+- Any collaborative research.
+
+::: notes
+Introduce the idea of working in silos and the difficulties of
+collaboration. Obvious examples:
+Aim to do as much of this as possible with visual slides only. I.e. keep
+text to a minimum. Just speak to interesting visuals.
+:::
+
+---
+
+## {background-image="./src/silos.jpg"}
+
+::: notes
+Build some familiar examples of why these are problematic
+
+-   The simple burden of collaborative writing by email
+-   Track changes doesn't work if you are tracking a different document.
+-   Someone tracks changes on a document 3 versions behind. Need to
+    manually integrate.
+-   There are solutions: trust could invest in expensive software
+-   Tied into a monopoly (microsoft)
+-   Alternatives? Google? Do we think the NHS would be comfortable with
+    this?
+:::
+
+---
+
+## {background-image="./src/video-games.jpg"}
+
+::: notes
+How do others solve this issue?
+Often in much harder circumstances?
+Game development:
+dozen or hundreds of developers often writing in different countries
+:::
+
+---
+
+## {background-image="./src/cern.jpeg"}
+
+::: notes
+How do others solve this issue?
+Often in much harder circumstances?
+Major international research collaborations:
+CERN: Thousands of authors from multiple continents.
+:::
+
+---
+
+# The Unreasonable Effectivenes of Plain Text and Version Control
+
+---
+
+## A (somewhat meta) Example
+
+- Teddy and I are writing this presentation
+- We don't use powerpoint
+
+![](./src/main-branch.png)
+ 
+---
+
+![](./src/one-branch.png)
+
+---
+
+![](./src/github.png)
+
+---
+
+![](./src/tracked-change.png)
+
+---
+
+![](./src/pull-request.png)
+
+---
+
+::: notes
+I'm tempted to avoid any special words like "pull request". Rather jsut
+say "they make a request that our changes are incorporated".
+:::
+
+---
+
+Now imagine that every NHS organisation does the same I now need to
+write a guideline of hyponatraemia I know that St. Elshwere has a very
+well established endocrine department We can find their guidelines on
+their github account. Because its under version control, it contains a
+full tree of every edit made by every professor.
+
+---
+
+![](./src/project-history.svg)
+
+---
+
+Now we "fork" and adapt to our local needs These guidelines were quite
+ward level heavy, and so we've adapted them
+
+![](src/sub-branch.png)
+
+::: notes
+We actually already do this, but informally by stealing from other
+trusts. This formalises and maintains the connection
+:::
+
+---
+
+Now some bleeding edge research causes St. Elshwere to update their
+guidelines We can see that we are now behind on their tree We can decide
+if we want to incorporate the new changes ourselves or not
+
+---
+
+## Benefits
+
+-   Practical: time saved, better collaboration, transparanecy
+
+## Challenges
+
+-   Some limited technical knowhow necessary
+-   Buy in: change in the way we work
+-   Comfort level putting work into public domain for those to find
+
+---
+
+- Why would we want to have guidelines in plane text?
+- What about formatting?
+- Why don't you want to target a webpage?
+- If you have to, develop template that convert into your trust formats
+
+---
+
+## Practicalities
+
+---
+
+![](./src/community.svg)
+
+---
+
+![](./src/theturingway-chapter.png)
+---
+
+## Next Steps
+
+- Network
+- Have a look at the Turing Way
+
+## Credits
+
+- Refernce Turing Way
+- Reference Art Work

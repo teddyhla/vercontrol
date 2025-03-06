@@ -1,0 +1,56 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+#include <stdint.h>
+
+#define WIDTH 800
+#define HEIGHT 600
+#define MAX_ENTITIES 256
+
+typedef struct {
+    float x, y, vx, vy;
+    uint32_t color;
+} Entity;
+
+Entity entities[MAX_ENTITIES];
+uint32_t framebuffer[WIDTH * HEIGHT];
+
+void update_entities() {
+    for (int i = 0; i < MAX_ENTITIES; i++) {
+        entities[i].x += entities[i].vx;
+        entities[i].y += entities[i].vy;
+        entities[i].vx *= 0.99f;
+        entities[i].vy *= 0.99f;
+        if (entities[i].x < 0 || entities[i].x >= WIDTH) entities[i].vx = -entities[i].vx;
+        if (entities[i].y < 0 || entities[i].y >= HEIGHT) entities[i].vy = -entities[i].vy;
+    }
+}
+
+void render() {
+    for (int i = 0; i < WIDTH * HEIGHT; i++) framebuffer[i] = 0;
+    for (int i = 0; i < MAX_ENTITIES; i++) {
+        int x = (int)entities[i].x;
+        int y = (int)entities[i].y;
+        if (x >= 0 && x < WIDTH && y >= 0 && y < HEIGHT)
+            framebuffer[y * WIDTH + x] = entities[i].color;
+    }
+}
+
+void game_loop() {
+    for (int i = 0; i < MAX_ENTITIES; i++) {
+        entities[i].x = rand() % WIDTH;
+        entities[i].y = rand() % HEIGHT;
+        entities[i].vx = ((rand() % 200) - 100) * 0.01f;
+        entities[i].vy = ((rand() % 200) - 100) * 0.01f;
+        entities[i].color = rand() | 0xFF000000;
+    }
+    for (int frame = 0; frame < 1000; frame++) {
+        update_entities();
+        render();
+    }
+}
+
+int main() {
+    game_loop();
+    return 0;
+}
