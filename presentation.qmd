@@ -1,6 +1,6 @@
 ---
 title: "guideline-version3-finalcomments49corrected.docx.lol"
-subtite: "Version Control for NHS"
+subtitle: "Modern collaboration with version control"
 date: "2025-03-07"
 smaller: true
 format: 
@@ -23,7 +23,7 @@ author:
     orcid: 0000-0001-9769-1618
     email: tunwin.hla@nhs.net
     affiliation: 
-      - name: GSTT 
+      - name: GSTT Hospital 
         city: London
         url: 
   - name: "Ed Palmer"
@@ -31,10 +31,10 @@ author:
     orcid: 0000-0002-8024-4616
     email: edward.palmer@nhs.net 
     affiliation: 
-      - name: Whittington
+      - name: Whittington Hospital
         city: London
         url:
-footer: "Your social media handles - anything you want on each slide"
+footer: "iconify fa6-brands:bluesky @doced.bsky.social | @teddyhla.bsky.social"
 bibliography: reference.bib
 execute:
   echo: false
@@ -66,19 +66,38 @@ General outline:
 
 ---
 
-- Guidelines, policies etc. typically word documents (proprietary) emailed around.
-- Any collaborative research.
+## Some Context
+
+::: {.column width="40%"}
+
+- Document collaboration in the NHS is broken
+- Reverts to the lowest common demonimator
+- MS Word and emails
+
+:::
+::: {.column width="50%"}
+![](./src/clippy.png)
+:::
 
 ::: notes
-Introduce the idea of working in silos and the difficulties of
-collaboration. Obvious examples:
-Aim to do as much of this as possible with visual slides only. I.e. keep
-text to a minimum. Just speak to interesting visuals.
+- A bit of background
+- Microsoft dominance in the 90s/2000s led to MS Word being the default collaborative writing tool
+- Based around collaboration in the open plan office
+- Less suited to healthcare: No desks. Itinerant workers. etc.
+- Most collaboration falls back to the lowest common demominator of MS word.
 :::
 
 ---
 
-## {background-image="./src/silos.jpg"}
+## Frustration
+
+:::{.fragment}
+- Colleague returns tracked changes on version 3. We're now on version 5.
+:::
+:::{.fragment}
+- There are solutions: cloud (MS word 💰 / google 😈)
+- Can we look to other industries for inspiration?
+:::
 
 ::: notes
 Build some familiar examples of why these are problematic
@@ -98,10 +117,9 @@ Build some familiar examples of why these are problematic
 ## {background-image="./src/video-games.jpg"}
 
 ::: notes
-How do others solve this issue?
-Often in much harder circumstances?
 Game development:
 dozen or hundreds of developers often writing in different countries
+Ultimately these are just plane text files
 :::
 
 ---
@@ -109,13 +127,21 @@ dozen or hundreds of developers often writing in different countries
 ## {background-image="./src/cern.jpeg"}
 
 ::: notes
-How do others solve this issue?
-Often in much harder circumstances?
 Major international research collaborations:
 CERN: Thousands of authors from multiple continents.
 :::
 
 ---
+
+## {background-image="./src/theturingway.svg"}
+
+::: notes
+Major international research collaborations:
+CERN: Thousands of authors from multiple continents.
+:::
+
+---
+
 
 # The Unreasonable Effectivenes of Plain Text and Version Control
 
@@ -222,3 +248,4 @@ if we want to incorporate the new changes ourselves or not
 
 - Refernce Turing Way
 - Reference Art Work
+- No boilerplate
