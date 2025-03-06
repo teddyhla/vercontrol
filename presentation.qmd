@@ -47,7 +47,8 @@ editor_options:
 ::: notes
 General outline:
 1. Introduce the problem. Make it familiar and relatable.
-2. Demonstrate a solution by using: Markdown, git and github (or similar)
+  - Documentation focused collaboration in the NHS is fragmented and broken
+2. Demonstrate a solution by using: Plain text (Markdown), git and github.
 3. Tackle obvious criticisms:
   - We already have version control/track changes in word. Yes, but you haven't solved the emailing files issue
   - So use google docs. This isn't a realistic solution and many trusts will not accept working closely with google as a company.
@@ -69,47 +70,27 @@ General outline:
 ## Some Context
 
 ::: {.column width="40%"}
-
-- Document collaboration in the NHS is broken
-- Reverts to the lowest common demonimator
-- MS Word and emails
-
+- Document collaboration in the NHS is broken.
+- Inevitably reverting to the lowest common demonimator.
+- MS Word and emails.
+- guideline-version3-finalcomments49corrected.docx.lol is a symptom.
 :::
 ::: {.column width="50%"}
 ![](./src/clippy.png)
 :::
 
-::: notes
-- A bit of background
-- Microsoft dominance in the 90s/2000s led to MS Word being the default collaborative writing tool
-- Based around collaboration in the open plan office
-- Less suited to healthcare: No desks. Itinerant workers. etc.
-- Most collaboration falls back to the lowest common demominator of MS word.
-:::
-
 ---
 
-## Frustration
+## Frustrating Examples
 
 :::{.fragment}
 - Colleague returns tracked changes on version 3. We're now on version 5.
+- Trust only pays for word licences on certain PCs.
+- Collaborator changes all the formatting and resized the figures.
 :::
 :::{.fragment}
-- There are solutions: cloud (MS word 💰 / google 😈)
-- Can we look to other industries for inspiration?
-:::
-
-::: notes
-Build some familiar examples of why these are problematic
-
--   The simple burden of collaborative writing by email
--   Track changes doesn't work if you are tracking a different document.
--   Someone tracks changes on a document 3 versions behind. Need to
-    manually integrate.
--   There are solutions: trust could invest in expensive software
--   Tied into a monopoly (microsoft)
--   Alternatives? Google? Do we think the NHS would be comfortable with
-    this?
+- Solutions: cloud (MS word 💰 / google 😈).
+- There are industries that have solved scalable document collaboration.
 :::
 
 ---
@@ -133,6 +114,19 @@ CERN: Thousands of authors from multiple continents.
 
 ---
 
+## {background-image="./src/linux.jpg"}
+
+::: notes
+Linux: Powers the internet and the vast majority of the phones in this room
+Created the very tools we will discuss today to solve this issue
+:::
+
+---
+
+![](./src/demo-code.png)
+
+---
+
 ## {background-image="./src/theturingway.svg"}
 
 ::: notes
@@ -142,8 +136,7 @@ CERN: Thousands of authors from multiple continents.
 
 ---
 
-
-# The Unreasonable Effectivenes of Plain Text and Version Control
+# Plain Text
 
 ---
 
@@ -209,9 +202,11 @@ if we want to incorporate the new changes ourselves or not
 
 ---
 
-## Benefits
+## Advantages/Benefits
 
--   Practical: time saved, better collaboration, transparanecy
+- Practical: time saved, better collaboration, transparanecy
+- Future proof
+- Scalable
 
 ## Challenges
 
@@ -225,6 +220,12 @@ if we want to incorporate the new changes ourselves or not
 - What about formatting?
 - Why don't you want to target a webpage?
 - If you have to, develop template that convert into your trust formats
+
+---
+
+## Markdown
+
+
 
 ---
 
