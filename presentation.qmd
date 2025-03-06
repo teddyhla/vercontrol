@@ -26,7 +26,7 @@ author:
       - name: GSTT 
         city: London
         url: 
-  - name: "Edward Palmer"
+  - name: "Ed Palmer"
     id: ep
     orcid: 0000-0002-8024-4616
     email: edward.palmer@nhs.net 
@@ -44,11 +44,30 @@ editor_options:
 
 # The Problem
 
+::: notes
+General outline:
+1. Introduce the problem. Make it familiar and relatable.
+2. Demonstrate a solution by using: Markdown, git and github (or similar)
+3. Tackle obvious criticisms:
+  - We already have version control/track changes in word. Yes, but you haven't solved the emailing files issue
+  - So use google docs. This isn't a realistic solution and many trusts will not accept working closely with google as a company.
+4. Show the benefits beyond simple "track changes".
+  - Multi-institute collaborations
+  - Enhanced productivity
+  - Re-visiting old branches/toughts
+  - Total audit trail of peer review
+5. Practical steps (How to get started? Where to go?)
+  - Learn the tools: Markdown (already know some of this from whatsapp etc.), Git (this is a little code orientated, but there is software to help), Github.
+  - Read the Turing Way
+  - Speak to your IT department. Run a pilot
+6. Contribute back
+  - If you get this working write a chapter for healthcare collaboration in the turing way.
+:::
+
 ---
 
--   Guidelines, policies etc. typically word documents (proprietary)
-    emailed around.
--   Any collaborative research.
+- Guidelines, policies etc. typically word documents (proprietary) emailed around.
+- Any collaborative research.
 
 ::: notes
 Introduce the idea of working in silos and the difficulties of
@@ -59,6 +78,9 @@ text to a minimum. Just speak to interesting visuals.
 
 ---
 
+## {background-image="./src/silos.jpg"}
+
+::: notes
 Build some familiar examples of why these are problematic
 
 -   The simple burden of collaborative writing by email
@@ -69,6 +91,7 @@ Build some familiar examples of why these are problematic
 -   Tied into a monopoly (microsoft)
 -   Alternatives? Google? Do we think the NHS would be comfortable with
     this?
+:::
 
 ---
 
@@ -94,17 +117,34 @@ CERN: Thousands of authors from multiple continents.
 
 ---
 
-## The Unreasonable Effectivenes of Plain Text and Version Control
+# The Unreasonable Effectivenes of Plain Text and Version Control
 
 ---
 
-## Examples
+## A (somewhat meta) Example
 
-- Teddy and I are writing guidelines
-- We want a microbiology peer review
-- Our plane text documents are placed into version control
-- Microbiologist provides peer review
-- Pull request
+- Teddy and I are writing this presentation
+- We don't use powerpoint
+
+![](./src/main-branch.png)
+ 
+---
+
+![](./src/one-branch.png)
+
+---
+
+![](./src/github.png)
+
+---
+
+![](./src/tracked-change.png)
+
+---
+
+![](./src/pull-request.png)
+
+---
 
 ::: notes
 I'm tempted to avoid any special words like "pull request". Rather jsut
@@ -152,6 +192,13 @@ if we want to incorporate the new changes ourselves or not
 -   Some limited technical knowhow necessary
 -   Buy in: change in the way we work
 -   Comfort level putting work into public domain for those to find
+
+---
+
+- Why would we want to have guidelines in plane text?
+- What about formatting?
+- Why don't you want to target a webpage?
+- If you have to, develop template that convert into your trust formats
 
 ---
 
