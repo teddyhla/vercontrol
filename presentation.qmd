@@ -34,7 +34,7 @@ author:
       - name: Whittington
         city: London
         url:
-footer: "Your social media handles - anything you want on each slide"
+footer: "doced.bsky.social & teddyhla.bsky.social"
 bibliography: reference.bib
 execute:
   echo: false
@@ -67,7 +67,7 @@ General outline:
 ---
 
 - Guidelines, policies etc. typically word documents (proprietary) emailed around.
-- Any collaborative research.
+- Any collaborative research!
 
 ::: notes
 Introduce the idea of working in silos and the difficulties of
@@ -75,6 +75,8 @@ collaboration. Obvious examples:
 Aim to do as much of this as possible with visual slides only. I.e. keep
 text to a minimum. Just speak to interesting visuals.
 :::
+
+![](./src/open-multiple-word.png)
 
 ---
 
@@ -106,6 +108,16 @@ dozen or hundreds of developers often writing in different countries
 
 ---
 
+## Assassin's Creed 
+
+-   34 million players by October 2023
+-   Ubisoft game studio
+-   2000 developers
+
+![Ubisoft has 2000 developers](./src/ubisoft.png)
+
+---
+
 ## {background-image="./src/cern.jpeg"}
 
 ::: notes
@@ -130,12 +142,29 @@ CERN: Thousands of authors from multiple continents.
  
 ---
 
+# The Power of Plain Text
+
+- writing text without any formatting = efficiency. 
+- An example
+
+![](./src/markdown.png)
+---
+
+# How collaboration looks
+
+-   each collaborator / each idea lives in seperate unique *branches*
+-   before they are *merged* 
+-   version controlled mean it is traceable and logged
+
 ![](./src/one-branch.png)
 
 ---
 
 ![](./src/github.png)
 
+---
+
+![](./src/git.png)
 ---
 
 ![](./src/tracked-change.png)
@@ -149,6 +178,7 @@ CERN: Thousands of authors from multiple continents.
 ::: notes
 I'm tempted to avoid any special words like "pull request". Rather jsut
 say "they make a request that our changes are incorporated".
+I agree here. 
 :::
 
 ---
@@ -158,6 +188,10 @@ write a guideline of hyponatraemia I know that St. Elshwere has a very
 well established endocrine department We can find their guidelines on
 their github account. Because its under version control, it contains a
 full tree of every edit made by every professor.
+
+-   Attempt at trusts. e.g., NHS Fife.
+
+![](./src/fife.png)
 
 ---
 
@@ -185,7 +219,7 @@ if we want to incorporate the new changes ourselves or not
 
 ## Benefits
 
--   Practical: time saved, better collaboration, transparanecy
+-   Practical: time saved, better collaboration, transparency
 
 ## Challenges
 
@@ -218,7 +252,11 @@ if we want to incorporate the new changes ourselves or not
 - Network
 - Have a look at the Turing Way
 
+![](./src/turing-way.png)
+
+---
+
 ## Credits
 
-- Refernce Turing Way
+- Reference the Turing Way
 - Reference Art Work
