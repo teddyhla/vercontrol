@@ -6,6 +6,7 @@ smaller: true
 format: 
   revealjs:
     theme: [default, styles.scss]
+    reference-location: document
 categories:
   - "intensive care medicine"
   - "version control"
@@ -34,7 +35,7 @@ author:
       - name: Whittington Hospital
         city: London
         url:
-footer: "\@doced.bsky.social | \@teddyhla.bsky.social"
+footer: "doced.bsky.social | teddyhla.bsky.social"
 bibliography: reference.bib
 execute:
   echo: false
@@ -42,7 +43,8 @@ editor_options:
   chunk_output_type: console
 ---
 
-# The Problem
+
+## This is a talk about version control
 
 ::: notes
 General outline:
@@ -64,20 +66,24 @@ General outline:
 6. Contribute back
   - If you get this working write a chapter for healthcare collaboration in the turing way.
 :::
+---
+
+## This is a talk about ~~version control~~ collaboration
 
 ---
 
-## Some Context
+## The Problem
 
-::: {.column width="40%"}
+::: {.column width="60%"}
 - Document collaboration in the NHS is broken.
-- Inevitably reverting to the lowest common demonimator.
-- MS Word and emails.
+- Lowest common demonimator; MS Word and email.
 - guideline-version3-finalcomments49corrected.docx.lol is a symptom.
 :::
-::: {.column width="50%"}
+::: {.column width="40%"}
 ![](./src/clippy.png)
 :::
+
+---
 
 ![](./src/open-multiple-word.png)
 
@@ -92,6 +98,7 @@ General outline:
 :::
 :::{.fragment}
 - Solutions: cloud (MS word 💰 / google 😈).
+- Neither scales well.
 - There are industries that have solved scalable document collaboration.
 :::
 
@@ -109,11 +116,11 @@ Ultimately these are just plane text files
 
 ## Assassin's Creed 
 
--   34 million players by October 2023
--   Ubisoft game studio
--   2000 developers
+- 34 million players by October 2023
+- Ubisoft game studio
+- 2000 developers
 
-![Ubisoft has 2000 developers](./src/ubisoft.png)
+![](./src/ubisoft.png)
 
 ---
 
@@ -137,43 +144,50 @@ Created the very tools we will discuss today to solve this issue
 
 ![](./src/demo-code.png)
 
----
-
-## {background-image="./src/theturingway.svg"}
-
 ::: notes
-Major international research collaborations:
-CERN: Thousands of authors from multiple continents.
+They can do this because they use plain text^[@zotero-10683]
+Plain text can be read by any computer, running any software
+Plain text will continue to work while we have computers
+No tie into a single company. No monopolies.
 :::
 
 ---
 
-# Plain Text
+## {background-image="./src/theturingway.svg"}
+
+::: aside
+^[@community2021, @theturing2024]
+:::
+
+::: notes
+Introduce the turing way.
+A decentralised group to bring these methods and technologies into the hands of scientists.
+:::
 
 ---
 
 ## A (somewhat meta) Example
 
 - Teddy and I are writing this presentation
-- We don't use powerpoint
+- We don't use powerpoint; plain text!
 
-![](./src/main-branch.png)
- 
 ---
 
-# The Power of Plain Text
-
-- writing text without any formatting = efficiency. 
-- An example
+## The Power of Plain Text
 
 ![](./src/markdown.png)
+
+::: notes
+Writing text without any formatting = efficiency.
+:::
+
 ---
 
-# How collaboration looks
+## Collaboration
 
--   each collaborator / each idea lives in seperate unique *branches*
--   before they are *merged* 
--   version controlled mean it is traceable and logged
+- Each collaborator / idea lives in seperate **branches**.
+- **Merged** when ready.
+- Version controlled: implicit to the method of collaboration.
 
 ![](./src/one-branch.png)
 
@@ -181,9 +195,6 @@ CERN: Thousands of authors from multiple continents.
 
 ![](./src/github.png)
 
----
-
-![](./src/git.png)
 ---
 
 ![](./src/tracked-change.png)
@@ -194,45 +205,31 @@ CERN: Thousands of authors from multiple continents.
 
 ---
 
-::: notes
-I'm tempted to avoid any special words like "pull request". Rather jsut
-say "they make a request that our changes are incorporated".
-I agree here. 
-:::
-
----
-
-Now imagine that every NHS organisation does the same I now need to
-write a guideline of hyponatraemia I know that St. Elshwere has a very
-well established endocrine department We can find their guidelines on
-their github account. Because its under version control, it contains a
-full tree of every edit made by every professor.
-
--   Attempt at trusts. e.g., NHS Fife.
-
-![](./src/fife.png)
-
----
-
 ![](./src/project-history.svg)
 
 ---
 
-Now we "fork" and adapt to our local needs These guidelines were quite
-ward level heavy, and so we've adapted them
+## Untapped Potential
+
+- Imagine every NHS trust uses this approach
+- we need a new hyponatraemia guidelines
+- St. Elshwere; global reputation
+- Find their guidelines on github: **Fork**
 
 ![](src/sub-branch.png)
 
 ::: notes
-We actually already do this, but informally by stealing from other
-trusts. This formalises and maintains the connection
+We do this already informally
 :::
 
 ---
 
-Now some bleeding edge research causes St. Elshwere to update their
-guidelines We can see that we are now behind on their tree We can decide
-if we want to incorporate the new changes ourselves or not
+## Untapped Potential
+
+- Major new RCT changes practice.
+- St. Elsewhere updates their guidelines.
+- **We are notified**.
+- The change is ratified and instantly disseminated.
 
 ---
 
@@ -244,47 +241,31 @@ if we want to incorporate the new changes ourselves or not
 
 ## Challenges
 
--   Some limited technical knowhow necessary
--   Buy in: change in the way we work
--   Comfort level putting work into public domain for those to find
+- **Some** technical knowhow necessary.
+- Buy in: change in the way we work.
+- Some friction now, for a massive payoff later.
+- Network effects are multiplicative.
+- Level of trust comfort: documents in public domain.
 
 ---
 
-- Why would we want to have guidelines in plane text?
-- What about formatting?
-- Why don't you want to target a webpage?
-- If you have to, develop template that convert into your trust formats
+## Questions
 
----
-
-## Markdown
-
-
-
----
-
-## Practicalities
+- Why would we want to have guidelines in plain text?
+- Formatting/branding? Develop trust templates.
+- Webpage as output: high fidelity medium, video, audio, reactive.
 
 ---
 
 ![](./src/community.svg)
 
----
+::: notes
 
-![](./src/theturingway-chapter.png)
----
+join our community
 
-## Next Steps
-
-- Network
-- Have a look at the Turing Way
-
-![](./src/turing-way.png)
+:::
 
 ---
 
 ## Credits
 
-- Reference the Turing Way
-- Reference Art Work
-- No boilerplate
